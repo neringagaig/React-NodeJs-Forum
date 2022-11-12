@@ -1,5 +1,5 @@
 import axios from "axios";
-const baseUrl = `https://localhost:3000/api/posts`;
+const baseUrl = `https://localhost:3003/posts`;
 
 let token = null;
 const setToken = (newToken) => {
@@ -27,11 +27,11 @@ const remove = async (id) => {
   return response.data;
 };
 
-const object = {
+const postsService = {
   setToken,
   getAll,
   create,
   remove,
 };
 
-export default object;
+export default postsService;

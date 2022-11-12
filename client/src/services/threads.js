@@ -1,5 +1,5 @@
 import axios from "axios";
-const baseUrl = `https://localhost:3000/api/threads`;
+const baseUrl = `https://localhost:3003/threads`;
 
 let token = null;
 const setToken = (newToken) => {
@@ -27,11 +27,11 @@ const remove = async (id) => {
   return response.data;
 };
 
-const object = {
+const threadsService = {
   setToken,
   getAll,
   create,
   remove,
 };
 
-export default object;
+export default threadsService;
