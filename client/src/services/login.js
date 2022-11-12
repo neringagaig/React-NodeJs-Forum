@@ -1,9 +1,9 @@
-import axios from "axios";
+import axios from "../api/axios";
 
-const baseUrl = `https://localhost:3003/login`;
+const LOGIN_URL = `/login`;
 
 const login = async () => {
-  const response = await axios.post(baseUrl);
+  const response = await axios.post(LOGIN_URL);
   return response.data;
 };
 
