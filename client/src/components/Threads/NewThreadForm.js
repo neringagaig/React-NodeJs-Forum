@@ -20,7 +20,7 @@ const NewThreadForm = ({ toggle, setToggle, filter }) => {
         category: filter ? filter : "general",
       };
       dispatch(createThread(threadObject));
-      dispatch(setNotification("Created a new thread", 10));
+      dispatch(setNotification("Created a new Topic", 10));
       setNewTitle("");
       setNewMessage("");
       setToggle(!toggle);

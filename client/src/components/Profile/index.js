@@ -43,21 +43,6 @@ const Profile = ({ user, users, handleLogout, threads, posts }) => {
     }
   };
 
-  const changePassword = (e) => {
-    e.preventDefault(e);
-    if (window.confirm("Are you sure you want to change your password?")) {
-      try {
-        if (userMatch) {
-          dispatch(setNotification(`Password is changed`, 10));
-        } else {
-          dispatch(setNotification("Error", 10));
-        }
-      } catch (error) {
-        dispatch(setNotification("Error", 10));
-      }
-    }
-  };
-
   const removeAvatar = () => {
     if (userMatch) {
       const fileToDelete = userMatch.avatar;
@@ -80,7 +65,6 @@ const Profile = ({ user, users, handleLogout, threads, posts }) => {
             users={users}
             removeUser={removeUser}
             removeAvatar={removeAvatar}
-            changePassword={changePassword}
           />
         </div>
       </div>

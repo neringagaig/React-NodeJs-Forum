@@ -26,7 +26,7 @@ const Threads = ({ user, toggle, setToggle, threads, filter, setFilter }) => {
         <div className="center">
           <h2>{filter ? capitalize(filter) : ""}</h2>
           <h3 className="page-link" onClick={() => setToggle(!toggle)}>
-            Create a new thread <i className="fas fa-comment"></i>
+            Create a new topic <i className="fas fa-comment"></i>
           </h3>
         </div>
       )}

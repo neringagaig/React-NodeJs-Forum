@@ -75,11 +75,6 @@ const UpdateForm = ({ userMatch, user, users, removeUser, changePassword, remove
           Update
         </button>
       </form>
-      <h2>Change Password</h2>
-      <p>Sends a link to your email to change password</p>
-      <button className="btn" onClick={changePassword}>
-        Request password change link
-      </button>
       <h2>Delete Avatar</h2>
       <button className="btn btn-danger" onClick={deleteAvatar}>
         Delete avatar
