@@ -39,7 +39,7 @@ const Post = ({ user, users, post, quoteMessage, setToggle }) => {
               setToggle(true);
             }}
           >
-            Quote
+            Comment
           </button>
         )}
         <span>

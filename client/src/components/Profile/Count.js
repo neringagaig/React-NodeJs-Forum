@@ -15,7 +15,7 @@ const Count = ({ threadsOfUser, postsOfUser }) => {
             setToggleThreads(!toggleThreads);
           }}
         >
-          {threadsOfUser.length} {threadsOfUser.length === 1 ? "thread" : "threads"}
+          {threadsOfUser.length} {threadsOfUser.length === 1 ? "post" : "posts"}
         </span>{" "}
         •{" "}
         <span
@@ -25,7 +25,7 @@ const Count = ({ threadsOfUser, postsOfUser }) => {
             setToggleThreads(false);
           }}
         >
-          {postsOfUser.length} {postsOfUser.length === 1 ? "post" : "posts"}
+          {postsOfUser.length} {postsOfUser.length === 1 ? "comment" : "comments"}
         </span>
       </p>
       {toggleThreads &&

@@ -5,6 +5,11 @@
   .thread-list:nth-child(odd){
     background-color: var(--white)
   }
+  .with-like {
+    display: flex;
+    align-items: center;
+    margin-left: 6px;
+  }
   
   .thread-list:nth-child(even){
     background-color: var(--whitesmoke)

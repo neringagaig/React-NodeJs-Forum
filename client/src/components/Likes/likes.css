@@ -1,0 +1,16 @@
+.wrapper{
+    display: flex;
+}
+span {margin-left: 4px;}
+.btn-container {
+    max-height: 16px;
+    max-width: 38px;
+    margin: 8px;
+    gap: 8px;
+    color: rgb(57, 57, 236);
+}
+
+.btn-container:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
